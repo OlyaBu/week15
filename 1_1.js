@@ -3,7 +3,7 @@ function check() {
     let name = document.getElementById("Name");
     let familyname = document.getElementById("FamilyName");
     let email = document.getElementById("email");
-    let password = document.getElementById("psw");
+   const password = document.getElementById("psw");
     let reapeatpassword = document.getElementById("pswReapet");
     document.getElementById('errorMessage').innerHTML = "";
 
@@ -27,4 +27,8 @@ function check() {
         document.getElementById('errorMessage')
             .innerHTML += "password doesn`t match<br>";
     }
+}
+
+function colorMe(){
+    password.style.backgroundColor = "blue";
 }
